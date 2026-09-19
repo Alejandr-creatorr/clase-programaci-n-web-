@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*		con font-size defino el tamaño que deseo para la fuente
+		con line-height defino el interlineado
+		con font-weight especifico el peso, ej: font-weight:900; 
+		con letter-spacing defino el interletrado
+		con text-transform:uppercase; puedo cambiar los textos a mayusculas
+		con margin y padding puedo separar mis textos de los bordes y situarlos mejor
+		con text-align puedo alinear mis contenidos al centro, derecha o izquierda.
+		*/
+
+/*Incluir la tipografia Sourse Sans 3*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {/* Definir para el body un margen de 0px, la tipografia Source Sans 3  y un tamaño de fuente de 16px con un peso de 500 y un color de fondo gris;*/ 
+	margin: 0; font-family: "Source Sans 3", sans-serif; font-size: 16px; font-weight: 500; background: #8C8C8C;}
+
+#contenedor { /* hacer que el contenedor tenga un ancho fijo de 1200px y que este centrado y con fondo blanco */ 
+width: 1200PX; background: #FFFFFF; margin: 50px auto;}
+#cabecera {/*crear una cabecera con ancho de 1200 y alto 700px, con el fondo Top2.jpg alineado a la derecha y el color de fondo de la imagen, que no se repita */ 
+width: 1200px; height: 700px;
+background-image: url("IMGS/top2.jpg");
+background-position: right;
+background-repeat:no-repeat;
+background-COLOR: #F7F7F7;}
+.copy { /*crear un copy dentro de cabecera de 600px de ancho y padding top 30px*/ 
+	width: 600px; padding-top: 30px;}
+h1 { /*tamaño de fuente de 100px y alto de linea 100px alineado a la derecha*/ 
+font-size: 100px;line-height: 100px; text-align: right;}
+h2 { /*tamaño de fuente 42, convertir a mayusculas peso 200 y espacio entre letras 8px, margen superior 85 y margen izquierdo 530px*/ 
+font-size: 42px; text-transform: uppercase; font-weight: 200px; letter-spacing: 8px; margin-top:  85px; margin-left: 530px; }
+h3 { /*convertir a mayusculas, peso de 300 */ 
+text-transform: uppercase; font-weight: 300;}
+h4 { /*tamaño de fuente 22, convertir a mayusculas peso 200 y espacio entre letras 4px, margen superior 20 */
+font-size:22px; text-transform: uppercase; font-weight: 200; letter-spacing: 4px; margin-top: 20px;}
+
+.boton { /*dar estilo al boton de 36px de alto y 200px ancho, bg #00D9D9 y hacer que flote a la derecha, aplicar border-radius 22px, convertir a mayusculas, centrar su contenido, padding top 13px y espacio entre letras 2px*/ 
+height: 36px; width: 200px; background: #00D9D9;float: right;border-radius: 22px; text-transform: uppercase; text-align: center; padding-top: 13px; letter-spacing: 2px}
+.boton_blanco { /*aplicar un borde blanco solido de 1px, un ancho de 200px y un alto de 36px aplicar border-radius, convertir a mayusculas, centrar, padding top 9px y espacio entre letras 2px*/
+height: 36px; width: 200px; border: 1px solid white; float: right; border-radius: 22px; text-transform: uppercase; text-align: center; padding-top: 9px; letter-spacing: 2px;}
+
+
+/*   SERVICIOS    */
+
+#servicios {overflow: hidden; background-color: #222; color:white; padding: 50px;}
+.servicios_flotan {/* tienen un ancho de 230px y flotan a la izquierda, definirles un borde blanco izquierdo de un pixel. una altura de 200px e interletrado de 3px, alinear contenidos al centro, poner en mayusculas, padding superior de 80px */ 
+width:230px; float: left; border-left: 1px solid white; height: 200px;letter-spacing: 3px; text-align: center; text-transform: uppercase; padding-top: 80px;}
+.filosofia {/* ancho 340px, flota a la izquierda, definir margen 20px*/ 
+width:  340px; float:left; margin:20px;}
+.filosofia p { /* cambiar el peso de letra a 600 */ 
+font-weight:600px;}
+a { /*quitar decorados y poner color blanco */ 
+text-decoration: none; color: white;}
+.servicios_flotan em { /*cambiar peso de letra a 400 italica, transformar texto a minusculas */ 
+font-weight: 400; font-style: italic; text-transform: lowercase;}
+
+
+/*   BANNER    */
+
+#banner {width: 100%; height: 750px; background: url("imgs/banner.jpg") no-repeat; overflow: hidden/*un ancho de 100% y alto de 750px, poner fondo banner.jpg, overflow hidden y que no se repita */ 
+}
+.creative { /*ancho de 400px, display block, padding izquierdo 70px, color de fuente #444, espacio entre letras 2px, peso de tipografia 300, alto de linea 26px, margen superior 50px y margen izquierdo 630px*/  
+width: 400px; display: block; padding-left: 70px; color: #444; letter-spacing: 2px; font-weight: 300; line-height: 26px; margin-top: 50px; margin-left: 630px;}
+.whoweare {background:url("imgs/ico04.png") no-repeat}
+.whatwedo {background:url("imgs/ico05.png") no-repeat;}
+#banner a, #banner a:active, #banner a:visited {color:#444; text-transform: uppercase; font-size: 14px; margin-top: 10px;display:block; font-weight: 500;/*definir color #444 cambiar a mayusculas y 14px de tamaño, separar del top 10px,   display block */ 
+}
+
+/*   PIE DE PAGINA    */
+
+#piedepagina { width: 100%; height: 280px; background: #222; color: #FFF; font-weight: 300; padding: 50px 0;/* ancho del 100% alto 280px, color de fondo #222 y de la tipografia blanco, peso de la fuente de 300, padding 50px y 0 a los lados  */
+}
+.pie_izq {width: 500px; float: left; padding:20px 0 0 80px;/* ancho de 500px flota a la izquierda y definir su padding 20px superior y 80 izquierdo  */ 
+}
+.pie_der {width:500px;float: left;/* ancho 500px y que flote a la izquierda  */ 
+}
+.pie_izq span { padding-left: 30px; display: block; margin-top: 20px;/* padding izquierdo 30px display block y margin top 20px  */ 
+}
+.tel 	{ background:url("imgs/ico_tel.png") no-repeat}
+.mail 	{ background:url("imgs/ico_mail.png") no-repeat}
+.map 	{ background:url("imgs/ico_map.png") no-repeat}
+
+.pie_der h3 {/* Cambiar puntaje tipografia a 18px, espacio entre letras 3px   */ 
+font-size: 18px; letter-spacing: 3px;}
+.pie_der li, .pie_der ul {/*  Quitar el list-style-type, poner margenes y padding en 0, espaciado de letras 3px e interlineado 24px, peso de fuente de 200  */ 
+list-style-type: none; margin: 0; padding: 0;letter-spacing: 3px; line-height: 24px; font-weight: 200}
+
+
+
